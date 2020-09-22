@@ -16,10 +16,38 @@
         <hr class="my-4">
           <button class="btn btn-outline-info" type="button" id="students">Students</button>
           <button class="btn btn-outline-info" type="button" id="Courses">courses</button>
-          <button class="btn btn-outline-info" type="button" id="new_student">New Student</button>
+          <button class="btn btn-outline-info" type="button" id="new_student"  data-toggle="modal" data-target="#new_student">New Student</button>
+      </div>
+      <div id='students_row' class='row'>
+      </div>          
+      <div id='courses_row' class='row'>
       </div>
     </div>
-
+    <!-- Modal Students-->
+    <div class="modal fade" id="new_student" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">New Student</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <label>First Name</label>
+            <input id="new_student_first_name" type="text"/>
+            <label>Last Name</label>
+            <input id="new_student_last_name" type="text"/>
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+     
 
 
 
